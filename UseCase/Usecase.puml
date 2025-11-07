@@ -1,0 +1,25 @@
+@startuml
+title Use Case Diagram - Blog: Rabat Active
+
+actor "User" as User
+actor "Writer" as Writer
+actor "Administrator" as Admin
+
+rectangle "Rabat Active Blog" {
+
+  (View articles and videos) as UC1
+  (Read an article or watch a video in detail) as UC2
+  (Save to favorites) as UC3
+  (Share an article or video) as UC4
+  (Manage published content) as UC5
+}
+
+User -- UC1
+User -- UC2
+User -- UC3
+
+Writer -- UC4
+
+Admin -- UC5
+
+@enduml
